@@ -24,7 +24,7 @@ const featureArr = [
 
 const Why_us = () => {
     return (
-        <section className={styles.whyus} style={
+        <section id="whyus" className={styles.whyus} style={
             {
                 background: "linear-gradient(rgb(27 20 100 / 60%), rgb(27 20 100 / 99%)), url(/images/header-img-1.jpg)",
                 backgroundSize: "cover"

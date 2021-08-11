@@ -1,0 +1,59 @@
+@import "../../../sass/abstracts/mixin";
+
+.prodCategory {
+    height: 30rem;
+    width: 23rem;
+    border-radius: 1rem;
+    margin: 1rem 2rem 1rem 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    @include respond(tab-port){
+        width: 22rem;
+        margin: 1rem 1rem 1rem 0;
+    }
+    @include respond(small-screen){
+        width: 19rem;
+        height: 25rem;
+        margin: .5rem ;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        -webkit-box-shadow: 0px 0px 49px -17px rgba(27, 20, 100, 1);
+        -moz-box-shadow: 0px 0px 49px -17px rgba(27, 20, 100, 1);
+        box-shadow: 0px 0px 49px -17px rgba(27, 20, 100, 1);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        -webkit-box-shadow: 0px 0px 31px -9px rgba(27, 20, 100, 1);
+        -moz-box-shadow: 0px 0px 31px -9px rgba(27, 20, 100, 1);
+        box-shadow: 0px 0px 31px -9px rgba(27, 20, 100, 1);
+    }
+
+    &__title {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #070f3e9c;
+        font-size: 1.6rem;
+        color: white;
+        text-transform: capitalize;
+        z-index: 2;
+        letter-spacing: 1px;
+    }
+
+    &__img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        filter: opacity(0.6);
+    }
+}

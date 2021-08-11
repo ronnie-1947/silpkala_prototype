@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 
 import Header from '../page_components/home/header/Header'
 import Why_us from '../page_components/home/why_us/Why_us'
+import ProductCategories from '../page_components/home/product_categories/ProductCategories'
 
 
 
@@ -13,6 +14,7 @@ export default function Home() {
     <Fragment>
       <Header/>
       <Why_us/>
+      <ProductCategories/>
     </Fragment>
   )
 }

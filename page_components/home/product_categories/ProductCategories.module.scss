@@ -1,0 +1,29 @@
+@import '../../../sass/abstracts/mixin';
+
+.categories{
+    padding: 8rem 2rem;
+    @include respond(small-screen) {
+        padding: 8rem 1rem;
+    }
+    
+    &__container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__head_box{
+        margin-bottom: 5rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__header{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3rem;
+    }
+}
