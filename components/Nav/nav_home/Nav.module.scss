@@ -1,0 +1,56 @@
+@import '../../../sass/abstracts/mixin';
+@import '../../../sass/abstracts/variables';
+
+.nav {
+    height: 10rem;
+    display: flex;
+    @include respond(small-screen) {
+        flex-direction: column;
+        height: 15rem
+    }
+
+    &__logo {
+        display: flex;
+        flex: 0 0 25rem;
+        align-items: center;
+        justify-content: center;
+        @include respond(small-screen) {
+            flex: 1;
+        }
+
+        img{
+            height: 10rem;
+            width: auto
+        }
+
+        span {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        align-items: center;
+        list-style: none;
+
+        .active {
+            background-color: $color-primary-light;
+        }
+
+        .nav__link {
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-primary-light;
+            }
+        }
+    }
+}

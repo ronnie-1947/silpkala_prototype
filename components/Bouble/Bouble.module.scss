@@ -1,0 +1,43 @@
+@import "../../sass/abstracts/mixin";
+@import "../../sass/abstracts/variables";
+
+.bouble__box {
+    flex: 0 0 25rem;
+    height: 100%;
+    @include absCenter;
+    @include respond(tab-land){
+        display:none;
+    }
+    @include respond(tab-port){
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bouble{
+        border-radius: 50%;
+        background-color: tomato;
+        display: flex;
+        transition: all 1s;
+        
+        &:hover {
+            -webkit-box-shadow: 2px 2px 41px -15px rgba(27, 20, 100, 1);
+            -moz-box-shadow: 2px 2px 41px -15px rgba(27, 20, 100, 1);
+            box-shadow: 2px 2px 41px -15px rgba(27, 20, 100, 1);
+            transform: rotate(360deg);
+        }
+        img{
+            height: 12rem;
+            width: 12rem;
+            border-radius: 50%;
+        }
+    }
+    
+    .bouble__container {
+        padding: 1rem;
+        
+        @include respond(tab-port){
+            padding: .5rem;
+        }
+    }
+}
