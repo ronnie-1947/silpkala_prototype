@@ -1,0 +1,21 @@
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixin";
+
+.whyus {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include respond(small-screen){
+        width: 100%;
+    }
+}
